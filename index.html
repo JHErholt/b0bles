@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B0ble-JErholt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="pwa-assets/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="pwa-assetsv/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="pwa-assets/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="pwa-assets/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="pwa-assets/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="pwa-assets/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="pwa-assets/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="pwa-assets/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="pwa-assets/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="pwa-assets/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pwa-assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="pwa-assets/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pwa-assets/favicon-16x16.png">
+    <link rel="manifest" href="pwa-assets/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="pwa-assets/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header-box">
+            <div>
+                <img class="logo" src="/assets/bObles-logo-hvid-png-300x125-2.png " alt="logo">
+            </div>
+            <div class="header pc">
+                <a class="menu" href="#vid">Videoer</a>
+                <a class="menu" href="#eggs">Yoga stol</a>
+                <a class="menu" href="#tb">Børne bord</a>
+            </div>
+            <div class="header tel">
+                <a class="menu" href="#tb">Børne bord</a> <br class="tel">
+                <a class="menu" href="#eggs">Yoga stol</a> <br class="tel">
+                <a class="menu" href="#vid">Videoer</a> <br class="tel">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+        </div>
+        <div class="underBanner">
+            <div class="flex-children ">
+                <h1 class="underBanner-text">nye produkter fra bobles</h1>
+            </div>
+        </div>
+        <!-- Legebord -->
+        <div id="tb" class="flex-50 bg1">
+            <div class="flex-children text-padding">
+                <div class="max">
+                    <h1>Børne bord</h1>
+                </div>
+            </div>
+            <div class="flex-children text-padding">
+                <div class="max">
+                    <p>Børnebordet, det mest børnevenlige bord på markedet, børnene kan tegne, og gøre alt hvad man kan
+                        ved et normalt bord!</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="col-50">
+                <img src="/assets/tegnebordGrey.png" alt="">
+            </div>
+            <div class="col-50">
+                <img src="/assets/tegnebordRose.png" alt="">
+            </div>
+        </div>
+        <!-- Yoga stol -->
+        <div id="eggs" class="flex-50 bg2">
+            <div class="flex-children text-padding">
+                <div class="max">
+                    <h1>Yoga stol</h1>
+                </div>
+            </div>
+            <div class="flex-children text-padding">
+                <div class="max">
+                    <p>Yoga stolen, for barnet der gerne ville have en yoga bold, men har forældre der bange for den
+                        smadre hjemmet!</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="col-50">
+                <img src="/assets/wipeoutStolGrey.png" alt="">
+            </div>
+            <div class="col-50">
+                <img src="/assets/wipeoutStolRosa.png" alt="">
+            </div>
+        </div>
+        <!-- Videoer -->
+        <div id="vid" class="flex-50 bg1">
+            <div class="flex-children text-padding">
+                <div class="max">
+                    <h1>Tegnebord</h1>
+                </div>
+            </div>
+            <div class="flex-children text-padding">
+                <div class="max">
+                    <h1>Yoga stol</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="video-box flex-container">
+                <video muted autoplay loop src="/assets/bord.mkv" class="video pc"></video>
+                <video controls autoplay muted loop src="/assets/bord.mp4" class="video tel"></video>
+                <video muted autoplay loop src="/assets/stol.mkv" class="video pc"></video>
+                <video controls autoplay muted loop src="/assets/stol.mp4" class="video tel"></video>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <br>
+        <div class="flex-container max-width-center">
+            <div class="width25">
+                <div class="center">
+                    <h3>KUNDERSERVICE</h3>
+                    <div>
+                        <a class="footerLink" href="#">Kontakt os</a><br>
+                        <a class="footerLink" href="#">Handelsbetingelser</a><br>
+                        <a class="footerLink" href="#">Personlig data</a><br>
+                        <a class="footerLink" href="#">Returnering og Reklamation</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="width25">
+                <div class="center">
+                    <h3>OM BOBLES</h3>
+                    <div>
+                        <a class="footerLink" href="#">b0bles stories</a><br>
+                        <a class="footerLink" href="#">Vores historie</a><br>
+                        <a class="footerLink" href="#">Manifesto</a><br>
+                        <a class="footerLink" href="#">Job i b0bles</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="width25">
+                <div class="center">
+                    <h3>FORHANDLERE</h3>
+                    <div>
+                        <a class="footerLink" href="#">Forhandlere</a><br>
+                        <a class="footerLink" href="#">Bliv forhandler</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="width25">
+                <div class="center">
+                    <h3>PRESSE OG FOTOS</h3>
+                    <div>
+                        <a class="footerLink" href="#">Presse + fotos</a><br>
+                        <a class="footerLink" href="#">Foldere</a><br>
+                        <a class="footerLink" href="#">Videoer</a><br>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

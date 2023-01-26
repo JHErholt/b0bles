@@ -1,0 +1,223 @@
+/* 2-----------------------------
+    <<Basic info>>
+
+Author: Jacob Erholt
+Reason for website: Exam
+Created: na/6/2020
+Last Modified: 16/12/2020
+Last Sorted: na/na/na
+
+
+Appreciated – Rixton ' 3
+2:30 ━━━━❍─────── 3:50
+↻     ⊲  Ⅱ  ⊳      ↺
+VOLUME: ▁▂▃▄▅▆▇  100%
+
+////////////////////////////////
+/////// Website CSS /////// 
+////////////////////////////////
+
+*/
+/* Fonts */
+@font-face{
+    font-family: 'Run';
+    src:url(/assets/Run-Medium.woff2),
+        url(/assets/Run-Medium.ttf);
+        font-weight: 500;
+}
+@font-face{
+    font-family: 'Tuffy';
+    src:url(/assets/Tuffy-Regular.woff),
+        url(/assets/Tuffy-Regular.ttf);
+        font-weight: 500;
+}
+
+/* Resets */
+*{box-sizing: border-box;}
+body, html{margin: 0;padding: 0;}
+img, iframe, video{max-width: 100%;}
+
+/* Overall */
+html{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+header, footer{
+    background-color: #30383a;
+}
+h1, h2{
+    font-family: 'Run', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+h3{
+    font-size: 16px;    
+}
+.tel{
+    display: block;
+}
+.pc{
+    display: none;
+}
+/* Header */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.header{
+    text-align: right;
+}
+.header-box{
+    height: 98px;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.logo{
+    width: 100px;
+    float: left;
+}
+.menu{
+    text-transform: uppercase;
+    font-family: 'Tuffy', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    float: right;
+}
+
+/* Main */
+.banner{
+    position: relative;
+    height: 200px;
+    background-image: url(/assets/banner.jpg);
+    background-size: cover;
+}
+.underBanner{
+    width: 100%;
+    align-items: center;
+    background-color: #bcb5af;
+    min-height: 180px;
+    position: relative;
+}
+.underBanner-text{
+    margin: 0;
+    padding: 70px;
+}
+.flex-50{
+    min-height: 280px;
+    align-items: center;
+    position: relative;
+}
+.flex-50>*{
+    width: 100%;
+}
+.bg1{
+    background-color: #6f6f70;
+}
+.bg2{
+    background-color: #c07b8b;
+}
+.text-padding{
+    text-align: center;
+    padding: 20px;
+}
+.video-box{
+    text-align: center;
+}
+.video{
+    max-width: 100%;
+}
+/* Footer */
+footer{
+    height: 490px;
+}
+.center{
+    align-items: center;
+}
+.footerLink{
+    color: #878787;
+    font-family: 'Tuffy', sans-serif;
+    font-size: 14px;
+    Padding:10  0 10px;
+    text-decoration: none;
+}
+.max-width-center{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+@media only screen and (min-width: 720px){
+    /* Overall */
+    .flex-container{
+        display: flex;
+    }
+    h1, h2{
+        font-size: 2.7vw;
+    }
+    .tel{
+        display: none;
+    }
+    .pc{
+        display: block;
+    }
+    /* Header */
+    
+    .menu{
+        padding: 10px 20px;
+    }
+    /* Main */
+    .flex-50>*{
+        width: 50%;
+    }
+    .flex-50{
+        display: flex;
+    }
+    .bg1{
+        background: linear-gradient(90deg, #dbd3cc  50%, #6f6f70 50%);
+    }
+    .bg2{
+        background: linear-gradient(90deg, #e3c3d0 50%, #c07b8b 50%);
+    }
+    .max{
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text-padding{
+        padding: 20px;
+    }
+    .col-50{
+        max-width: 50%;
+    }
+    .video{
+        max-width: 50%;
+    }
+    /* Footer */
+    .width25{
+        width: 25%;
+    }
+}
+@media only screen and (min-width: 800px){
+    .banner{
+        height: 250px;
+    }
+}
+@media only screen and (min-width: 1000px){
+    .banner{
+        height: 300px;
+    }
+}
+@media only screen and (min-width: 1150px){
+    .banner{
+        height: 360px;
+    }
+}
